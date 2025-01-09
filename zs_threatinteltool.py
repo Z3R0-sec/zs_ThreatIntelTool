@@ -1,9 +1,10 @@
 import requests
 import sys
+import os
 
 # API keys 
-VIRUSTOTAL_API_KEY = "f5cbe833791466c0895d3ff009bb80e10b6dea836333c47e803793541744d1f9"
-ABUSEIPDB_API_KEY = "9a933ffa749f3808d9797235ad5e224e097114199127cd55229a7e7f0ca217fec9e322ff51f3659f"
+VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
+ABUSEIPDB_API_KEY = os.getenv("ABUSEIPDB_API_KEY")
 
 # Color codes for aesthetics
 class Colors:
